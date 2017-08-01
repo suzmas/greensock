@@ -1,5 +1,5 @@
 (function($) {
-    
+
 	var img = $('img'),
 		h2 = $('h2'),
 		h1 = $('h1'),
@@ -10,7 +10,7 @@
 	// Controlling Timeline Playback
 	tl
 		.from(h1, 1, {y: -15, autoAlpha: 0, ease:Power1.easeOut})
-		.from(intro, 1, {y: -15, autoAlpha: 0, ease:Power1.easeOut})
+		.from(intro, 1, {y: -15, autoAlpha: 0, ease:Power1.easeOut}, '-=0.7')
 		.from(img, 1, {y: -15, autoAlpha: 0, ease:Power1.easeOut})
 		.from(h2, 1, {y: -15, autoAlpha: 0, ease:Power1.easeOut})
 		.from(listItem, 1, {y: -15, autoAlpha: 0, ease:Power1.easeOut});
@@ -54,9 +54,3 @@
 	});
 
 })(jQuery);
-
-
-
-
-
-
